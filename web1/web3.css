@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(photo/background.png);
+    background-position: center;
+    background-size: cover;
+     position: relative;
+    
+}
+
+#bar{
+    width:100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+
+#logo{
+    
+    margin-left: 20px;
+    margin-top: 20px;
+     width: 200px;
+    cursor:pointer;
+    animation: mover;
+    animation-duration: 5s;
+    
+}
+
+@keyframes mover{
+    0%{
+        margin-top: -200px;
+    }
+    30%{
+        margin-top: 100px;
+    }
+    100%{
+        margin-top:20px;
+    }
+}
+
+
+
+#cart{
+    width: 60px;
+    cursor: pointer;
+}
+
+nav{
+    flex: 1;
+    padding: 60px;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    padding: 0px 20px;
+    margin: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+#cont{
+    position: relative;
+    top:100px;
+    left: 200px;
+    animation: ssr;
+    animation-duration: 5s;
+    
+}
+@keyframes ssr{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+    
+}
+
+#collect{
+border: 1px solid black;
+ box-sizing: border-box;
+ background: linear-gradient(45deg,#87adfe,#ff77cd);
+ padding: 6px 10px;
+ border-radius: 10px;
+ color: aliceblue;
+
+}
+
+#cont h2{
+    font-size: 60px;
+    font-weight: 100;
+    color: #232d60;
+    position: relative;
+    top:-30px
+}
+
+#cont p{
+    font-size: 20px;
+    color: #6a7199;
+    margin-top: -30px;
+}
+
+#imges{
+    display: flex;
+    
+}
+
+#imges img{
+    height: 50px;
+    width: 50px;
+    margin:0px 10px;
+    cursor:pointer;
+}
+
+#photo{
+    height: 600px;
+    position: absolute;
+    top:50px;
+    right: 250px;
+    animation: lls;
+    animation-duration: 5s;
+}
+
+@keyframes lls{
+    0%{
+        height:0px
+    }
+    100%{
+        height:600px;
+    }
+}
